@@ -1,0 +1,90 @@
+body{
+    margin: 30px;
+}
+.clearfloat{
+    clear: left;
+}
+.subtitle{
+    margin: 40px 20px;
+}
+.inputbox{
+    display: block;
+    width: 265px;
+    height: 30px;
+    margin: 20px;
+    float: left;
+}
+.clickbox input{
+    color: #eee;
+    display: block;
+    clear: both;
+    width: 80px;
+    height: 25px;
+    background: green;
+    margin: 10px auto;
+}
+
+.inputbox span{
+    text-align: center;
+    display: block;
+    width: 85px;
+    float: left;
+}
+.inputbox input {
+    width: 150px;
+    height: 25px;
+    float: left;
+}
+.inputbox select{
+    float: left;
+    height: 25px;
+    width: 154px;
+    display: block;
+}
+.smallfont {
+    
+    font-size: 10px;
+}
+.clickbox{
+    float: left;
+    width: 46%;
+}
+
+.redbox input{
+    background-color: #C83838;
+}
+iframe{
+    margin: 0px;
+}
+form span{
+    margin: 0;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+.boxwidth{
+    width:300px;
+}
+.deptbox{
+    display: block;
+    width: 350px;
+    float: left;
+}
+.deptbox span{
+    width: 100px;
+}
+.input_mid{
+    display: block;
+    width: 265px;
+    height: 30px;
+    margin: 20px;
+    float: left;
+}
+.firstbox{
+    clear: left;
+}
+table{
+    width:80%;
+    margin: 0 auto;
+    font-size: 15px;
+}

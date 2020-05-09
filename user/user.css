@@ -1,0 +1,19 @@
+body{
+    margin: 30px;
+}
+.inputbox{
+    display: block;
+    width: 250px;
+    height: 30px;
+    margin: 20px;
+    float: left;
+}
+.clickbox input{
+    color: #eee;
+    display: block;
+    clear: both;
+    width: 80px;
+    height: 25px;
+    background: green;
+    margin: 20px auto;
+}
