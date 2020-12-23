@@ -190,7 +190,7 @@ INSERT INTO `user_admin` (`adminID`, `adminName`, `pwd`) VALUES
 
 
 
-![admin](C:\Users\ning\Documents\GitHub\student-management-system\img\admin.png)
+![admin](./img/admin.png)
 
 
 
