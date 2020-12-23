@@ -91,7 +91,7 @@ if(!isset($_SESSION["admin"])||!$_SESSION["login"]==true){
 
     </div>
     <div class="content">
-        <iframe name="frame" frameborder="0" width="100%"  scrolling="no"  src="./welcome.php"></iframe>
+        <iframe name="frame" frameborder="0" width="100%"  scrolling="yes"  src="./welcome.php"></iframe>
     </div>
 
 </div>

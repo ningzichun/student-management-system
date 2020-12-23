@@ -17,7 +17,9 @@
 #### 安装
 确保要部署的机器上已经安装好主流版本的PHP/MySQL，配置好了Web服务器，已将管理系统源码文件复制到要部署的目录中，赋予需要的文件权限。建好数据库，赋予数据库用户需要的读写权限。
 
-可以导入示例数据example.sql或按下面步骤进行全新安装。
+可以导入精简示例数据 example_lite.sql 或按下面步骤进行全新安装。
+
+在 PHP7.2 + MYSQL5.6 及 PHP7.4 + MySQL8.0 下测试通过。
 
 ###### 执行建表命令
 
@@ -48,7 +50,7 @@ CREATE TABLE `department` (
   `dadd` varchar(30) DEFAULT NULL,
   `dmng` varchar(10) DEFAULT NULL,
   `dtel` varchar(15) DEFAULT NULL,
-  UNIQUE KEY `dname` (`dname`),
+  UNIQUE KEY `did_2` (`did`),
   KEY `did` (`did`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -121,7 +123,13 @@ CREATE TABLE `user_student` (
 
 
 新建管理员账户，在表 user_admin 中新建一行记录，adminID 为管理员ID，adminName 为管理员姓名，pwd为MD5加密后的密码。
-修改 ./config/database.php 中的数据库连接信息。
+实例代码如下（通用的admin）：
+``` sql
+INSERT INTO `user_admin` (`adminID`, `adminName`, `pwd`) VALUES
+('admin', 'A先生', '21232f297a57a5a743894a0e4a801fc3');
+```
+
+然后，修改 ./config/database.php 中的数据库连接信息。基于 PHP 的开源单页数据库管理程序 [Adminer](https://github.com/vrana/adminer/) 可以助你便捷管理数据库。
  
 #### 功能介绍
 学生管理
@@ -174,6 +182,19 @@ CREATE TABLE `user_student` (
 - 输入修改的信息后，单击“修改信息”即可提交修改的学生信息
 - 选择修改密码就可以进入修改密码界面，输入相关的信息，单击“提交”就可以更新密码
 
-Credit
-@carbonium14
+
+
+#### 运行截图
+
+![login](./img/login.png)
+
+
+
+![admin](C:\Users\ning\Documents\GitHub\student-management-system\img\admin.png)
+
+
+
+
+
+With the help of @carbonium14
 
